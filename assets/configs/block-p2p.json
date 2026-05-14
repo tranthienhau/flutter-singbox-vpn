@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    { "domain_suffix": [".torrent.com", ".tracker.io", "openbittorrent.com"] },
+    { "domain_keyword": ["bittorrent", "torrent", "magnet"] },
+    { "process_name": ["qbittorrent", "transmission", "deluge", "utorrent", "rtorrent"] },
+    { "network": "udp", "port_range": ["6881:6999", "51413:51413"] }
+  ]
+}

@@ -1,0 +1,10 @@
+Package: singboxvpn
+Version: 0.1.0
+Section: net
+Priority: optional
+Architecture: amd64
+Depends: sing-box (>= 1.9), libc6, libgtk-3-0
+Maintainer: Hau Tran <tranthienhau@gmail.com>
+Description: Flutter desktop client for Sing-box VPN
+ Connect / disconnect, server selection, kill switch, auto-update,
+ platform-wide BitTorrent/P2P blocking at the Sing-box layer.

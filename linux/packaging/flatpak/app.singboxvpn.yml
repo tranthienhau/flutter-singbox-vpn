@@ -1,0 +1,19 @@
+app-id: app.singboxvpn.SingboxVPN
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: singboxvpn
+finish-args:
+  - --share=network
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=all
+  - --talk-name=org.freedesktop.NetworkManager
+modules:
+  - name: singboxvpn
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 singboxvpn /app/bin/singboxvpn
+    sources:
+      - type: file
+        path: build/linux/x64/release/bundle/singboxvpn

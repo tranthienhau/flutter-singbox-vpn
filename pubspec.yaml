@@ -1,0 +1,31 @@
+name: flutter_singbox_vpn
+description: Flutter desktop VPN client built on Sing-box. Linux/macOS/Windows. Demonstrates kill switch, server selection, and platform-wide BitTorrent blocking via Sing-box rule-sets.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+  path_provider: ^2.1.4
+  process_run: ^1.2.0
+  shared_preferences: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.11
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/configs/

@@ -1,0 +1,20 @@
+name: singboxvpn
+base: core22
+version: '0.1.0'
+summary: Flutter desktop client for Sing-box VPN
+description: |
+  Connect / disconnect, server selection, kill switch, auto-update,
+  platform-wide BitTorrent/P2P blocking at the Sing-box layer.
+grade: stable
+confinement: strict
+
+apps:
+  singboxvpn:
+    command: bin/singboxvpn
+    plugs: [network, network-bind, network-control, network-observe, home]
+
+parts:
+  singboxvpn:
+    plugin: flutter
+    source: ../../..
+    flutter-target: lib/main.dart
