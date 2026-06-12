@@ -9,6 +9,16 @@ Flutter desktop VPN client built on top of Sing-box. Targets Linux, macOS, Windo
 - Linux packaging: `.deb`, `.AppImage`, Flatpak manifest, Snapcraft yaml
 - Tun mode integration notes for Linux (`tun` device + DNS handling)
 
+## Demo
+
+These are real captures from the running app on the iOS Simulator (see [FLOW.md](FLOW.md) for how they were generated).
+
+| Disconnected | Server picker | Policy controls |
+| --- | --- | --- |
+| ![Disconnected](screenshots/01-disconnected.png) | ![Server picker](screenshots/02-server-picker.png) | ![Policy controls](screenshots/03-policy-controls.png) |
+
+![Demo](screenshots/demo.gif)
+
 ## Architecture
 
 ```
